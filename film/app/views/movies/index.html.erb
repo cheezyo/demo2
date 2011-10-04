@@ -1,0 +1,27 @@
+<h1>Listing movies</h1>
+
+<%= link_to 'New Movie', new_movie_path %>
+
+<table>
+  <tr>
+	<th/>
+    <th>Title</th>
+    <th>Director</th>
+    <th>Release date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @movies.each do |movie| %>
+  <tr>
+	<td><%= image_tag movie.image_url if movie.image_url.present? %></td>
+    <td><%= movie.title %></td>
+    <td><%= movie.director %></td>
+    <td><%= movie.release_date %></td>
+    <td><%= link_to 'Show', movie %></td>
+    <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    <td><%= link_to 'Destroy', movie, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>

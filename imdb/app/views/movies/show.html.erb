@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @movie.title %></h1>
+
+<p>
+  <%= image_tag @movie.image_url, class: 'cover' if @movie.image_url.present? %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @movie.rating %>
+</p>
+
+<p>
+  <b>Director:</b>
+  <%= @movie.director %>
+</p>
+
+<p>
+  <b>Release date:</b>
+  <%= @movie.release_date %>
+</p>
+
+<p>
+  <b>Runtime:</b>
+  <%= pluralize(@movie.runtime, 'minute') %>
+</p>
+
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>

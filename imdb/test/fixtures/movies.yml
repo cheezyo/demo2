@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  image_url: MyString
+  rating: 9.99
+  director: MyString
+  release_date: 2011-09-22
+  runtime: 1
+
+two:
+  title: MyString
+  image_url: MyString
+  rating: 9.99
+  director: MyString
+  release_date: 2011-09-22
+  runtime: 1

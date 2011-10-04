@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  release_year: 1
+  director: MyString
+  image_url: MyString
+
+two:
+  title: MyString
+  release_year: 1
+  director: MyString
+  image_url: MyString

@@ -1,0 +1,21 @@
+table {
+	width: 100%;
+	
+	img {
+		max-width: 100px;
+	}
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: 0.5em;
+}
+
+.cover {
+	max-width: 200px;
+	margin-right: 1em;
+	float: left;
+}

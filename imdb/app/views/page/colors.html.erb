@@ -1,0 +1,14 @@
+<h1>Colors</h1>
+<%= link_to 'index', :action => 'index' %>
+
+<% @colors.each_pair do |color_name, color_code| %>
+    <p style="color:<%= color_code %>  "> I'm <%= color_name %> da ba dee
+
+
+    </p>
+
+
+<% end %>
+
+
+
